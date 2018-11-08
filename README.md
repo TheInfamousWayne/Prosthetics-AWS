@@ -1,2 +1,1 @@
-# Prosthetics-DDPG
 # Prosthetics-AWS
