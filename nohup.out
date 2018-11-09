@@ -4106,3 +4106,11 @@ Type is unsupported, or the types of the items don't match field type in Collect
 WARNING:tensorflow:Issue encountered when serializing moving_average_variables.
 Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
 [-0.07905694150420949, 0.07905694150420949] has type list, but expected one of: int, long, bool
+  File "runner.py", line 44
+    train_rewards.append(i[0])
+                             ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "runner.py", line 44
+    train_rewards.append(i[0])
+                             ^
+TabError: inconsistent use of tabs and spaces in indentation
