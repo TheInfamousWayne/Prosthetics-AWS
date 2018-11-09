@@ -6,6 +6,7 @@
 
 import opensim as osim
 from osim.env import ProstheticsEnv
+import pandas as pd
 import gc
 gc.enable()
 
@@ -35,6 +36,15 @@ def main():
     # Playing Episodes
     train_rewards = []
     avg_rewards = []
+    
+    # Saving from last checkpoint
+    trew = pd.read_csv("train_rewards.csv",header=None)
+    avgrew = pd.read_csv("avg_rewards.csv",header=None)
+    for i in trew.values:
+	train_rewards.append(i[0])
+    for i in avgrew.values:
+	avg_rewards.append(i[0])
+
     for episode in range(EPISODES):
         state = env.reset()
         #print "episode:",episode
@@ -69,7 +79,7 @@ def main():
         
         if episode % 50 == 0:
             np.savetxt("train_rewards.csv", train_rewards, delimiter=",", fmt='%d')
-            np.savetxt("avg_rewards.csv", avg_rewards, delimiter=",", fmt='%d')
+            np.savetxt("avg_rewards.csv", avg_rewards, delimiter=",", fmt='%f')
     # Closing the monitor
 #     env.monitor.close()
 
