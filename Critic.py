@@ -13,9 +13,9 @@ import math
 # In[4]:
 
 
-LAYER1_SIZE = 128
-LAYER2_SIZE = 64
-LEARNING_RATE = 1e-3
+LAYER1_SIZE = 512
+LAYER2_SIZE = 256
+LEARNING_RATE = 3e-4
 TAU = 0.001
 L2 = 0.01
 
@@ -68,8 +68,8 @@ class CriticNetwork:
         b3 = tf.Variable(tf.random_uniform([1],-3e-3,3e-3))
         # Feed Forward and Normalisation
         layer0_bn = self.batch_norm_layer(state_input,training_phase=is_training,scope_bn='q_batch_norm_0',activation=tf.identity)
-        layer1 = tf.nn.relu(tf.matmul(layer0_bn,W1) + b1)
-        layer2 = tf.nn.relu(tf.matmul(layer1,W2) + tf.matmul(action_input,W2_action) + b2)
+        layer1 = tf.nn.selu(tf.matmul(layer0_bn,W1) + b1)
+        layer2 = tf.nn.selu(tf.matmul(layer1,W2) + tf.matmul(action_input,W2_action) + b2)
         # Output Layer Evaluation
         q_value_output = tf.identity(tf.matmul(layer2,W3) + b3)
         return state_input,action_input,q_value_output,[W1,b1,W2,W2_action,b2,W3,b3],is_training
@@ -84,8 +84,8 @@ class CriticNetwork:
         target_net = [ema.average(x) for x in net]
         # Feed Forward and Normalisation
         layer0_bn = self.batch_norm_layer(state_input,training_phase=is_training,scope_bn='target_q_batch_norm_0',activation=tf.identity)
-        layer1 = tf.nn.relu(tf.matmul(layer0_bn,target_net[0]) + target_net[1])
-        layer2 = tf.nn.relu(tf.matmul(layer1,target_net[2]) + tf.matmul(action_input,target_net[3]) + target_net[4])
+        layer1 = tf.nn.selu(tf.matmul(layer0_bn,target_net[0]) + target_net[1])
+        layer2 = tf.nn.selu(tf.matmul(layer1,target_net[2]) + tf.matmul(action_input,target_net[3]) + target_net[4])
         # Output Layer Evaluation
         q_value_output = tf.identity(tf.matmul(layer2,target_net[5]) + target_net[6])
         return state_input,action_input,q_value_output,target_update,is_training

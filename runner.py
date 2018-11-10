@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 10000
+EPISODES = 10001
 TEST = 100
 
 
@@ -30,13 +30,17 @@ TEST = 100
 
 
 def main():
-    env = ProstheticsEnv(visualize=True, difficulty=1)
+    env = ProstheticsEnv(visualize=False, difficulty=1)
     agent = DDPG(env)
     #env.monitor.start('experiments/' + ENV_NAME,force=True)
     
     # Playing Episodes
-    train_rewards = list(np.load("train_rewards.npy"))
-    avg_rewards = list(np.load("average_rewards.npy"))
+    try:
+        train_rewards = list(np.load("train_rewards.npy"))
+        avg_rewards = list(np.load("average_rewards.npy"))
+    except:
+        train_rewards = []
+        avg_rewards = []
 
     for episode in range(EPISODES):
         state = env.reset()
@@ -71,9 +75,13 @@ def main():
             avg_rewards.append(ave_reward)
             print ('episode: ',episode,'Evaluation Average Reward:',ave_reward)
         
-        if episode % 50 == 0:
+        if (episode+1) % 200 == 0:
             np.save("train_rewards.npy", train_rewards)
             np.save("average_rewards.npy", avg_rewards)
+            
+        if (episode+1) % 2000 == 0:
+            agent.replay_buffer.save()
+            
     # Closing the monitor
     #env.monitor.close()
 

@@ -6,6 +6,7 @@
 
 from collections import deque
 import random
+import pickle as pickle
 
 
 # In[2]:
@@ -16,6 +17,7 @@ class ReplayBuffer(object):
         self.buffer_size = buffer_size
         self.num_experiences = 0
         self.buffer = deque()
+        self.load()
         
     def get_batch(self, batch_size):
         # Randomly sample batch_size examples
@@ -40,5 +42,15 @@ class ReplayBuffer(object):
     
     def erase(self):
         self.buffer = deque()
-        self.num_experiences = 0
-
+        self.num_experiences = 0 
+        
+    def save(self):
+        pickle.dump([self.buffer,self.num_experiences], open("./replay_memory.pickle", 'wb'), True)
+        print('memory dumped into ', "./replay_memory.pickle")
+    
+    def load(self):
+        try:
+            [self.buffer,self.num_experiences] = pickle.load(open("./replay_memory.pickle", 'rb'))
+            print('memory loaded from ',"./replay_memory.pickle")
+        except:
+            print("a new beginning")
