@@ -39,11 +39,12 @@ def main():
     
     # Saving from last checkpoint
     trew = pd.read_csv("train_rewards.csv",header=None)
-    avgrew = pd.read_csv("avg_rewards.csv",header=None)
+#    avgrew = pd.read_csv("avg_rewards.csv",header=None)
+    
     for i in trew.values:
-	train_rewards.append(i[0])
-    for i in avgrew.values:
-	avg_rewards.append(i[0])
+        train_rewards.append(i[0])
+ #   for i in avgrew.values:
+  #      avg_rewards.append(i[0])
 
     for episode in range(EPISODES):
         state = env.reset()
