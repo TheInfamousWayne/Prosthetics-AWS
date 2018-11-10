@@ -14,9 +14,9 @@ import math
 
 
 # Hyper Parameters
-LAYER1_SIZE = 128
-LAYER2_SIZE = 64
-LEARNING_RATE = 1e-4
+LAYER1_SIZE = 512
+LAYER2_SIZE = 256
+LEARNING_RATE = 3e-4
 TAU = 0.001
 BATCH_SIZE = 128
 
@@ -81,18 +81,18 @@ class ActorNetwork:
         state_input = tf.placeholder(tf.float32,shape=[None,state_dim]) # input to the network
         is_training = tf.placeholder(tf.bool) # training/testing flag
         # Creating layers
-        W1 = tf.Variable(tf.random_uniform(shape=[state_dim,layer1_size]), [-1/math.sqrt(state_dim), 1/math.sqrt(state_dim)])
-        b1 = tf.Variable(tf.random_uniform(shape=[layer1_size]), [-1/math.sqrt(state_dim), 1/math.sqrt(state_dim)])
-        W2 = tf.Variable(tf.random_uniform(shape=[layer1_size,layer2_size]), [-1/math.sqrt(layer1_size), 1/math.sqrt(layer1_size)])
-        b2 = tf.Variable(tf.random_uniform(shape=[layer2_size]), [-1/math.sqrt(layer1_size), 1/math.sqrt(layer1_size)])
-        W3 = tf.Variable(tf.random_uniform([layer2_size,action_dim]),[-3e-3,3e-3])
-        b3 = tf.Variable(tf.random_uniform([action_dim]),[-3e-3,3e-3])
+        W1 = self.variable([state_dim,layer1_size], state_dim)
+        b1 = self.variable([layer1_size], state_dim)
+        W2 = self.variable([layer1_size,layer2_size], layer1_size)
+        b2 = self.variable([layer2_size], layer1_size)
+        W3 = tf.Variable(tf.random_normal([layer2_size,action_dim],-3e-3,3e-3))
+        b3 = tf.Variable(tf.random_normal([action_dim],-3e-3,3e-3))
         # Feed Forward and Normalisation
         layer0_bn = self.batch_norm_layer(state_input,training_phase=is_training,scope_bn='batch_norm_0',activation=tf.identity)
         layer1 = tf.matmul(layer0_bn,W1) + b1
-        layer1_bn = self.batch_norm_layer(layer1,training_phase=is_training,scope_bn='batch_norm_1',activation=tf.nn.relu)
+        layer1_bn = self.batch_norm_layer(layer1,training_phase=is_training,scope_bn='batch_norm_1',activation=tf.nn.selu)
         layer2 = tf.matmul(layer1_bn,W2) + b2
-        layer2_bn = self.batch_norm_layer(layer2,training_phase=is_training,scope_bn='batch_norm_2',activation=tf.nn.relu)
+        layer2_bn = self.batch_norm_layer(layer2,training_phase=is_training,scope_bn='batch_norm_2',activation=tf.nn.selu)
         # Output Layer Evaluation
         action_output = tf.tanh(tf.matmul(layer2_bn,W3) + b3)
         return state_input,action_output,[W1,b1,W2,b2,W3,b3],is_training
@@ -107,12 +107,16 @@ class ActorNetwork:
         # Feed Forward and Normalisation
         layer0_bn = self.batch_norm_layer(state_input,training_phase=is_training,scope_bn='target_batch_norm_0',activation=tf.identity)
         layer1 = tf.matmul(layer0_bn,target_net[0]) + target_net[1]
-        layer1_bn = self.batch_norm_layer(layer1,training_phase=is_training,scope_bn='target_batch_norm_1',activation=tf.nn.relu)
+        layer1_bn = self.batch_norm_layer(layer1,training_phase=is_training,scope_bn='target_batch_norm_1',activation=tf.nn.selu)
         layer2 = tf.matmul(layer1_bn,target_net[2]) + target_net[3]
-        layer2_bn = self.batch_norm_layer(layer2,training_phase=is_training,scope_bn='target_batch_norm_2',activation=tf.nn.relu)
+        layer2_bn = self.batch_norm_layer(layer2,training_phase=is_training,scope_bn='target_batch_norm_2',activation=tf.nn.selu)
         # Output Layer Evaluation
         action_output = tf.tanh(tf.matmul(layer2_bn,target_net[4]) + target_net[5])
         return state_input,action_output,target_update,is_training
+    
+    
+    def variable(self,shape,f):
+        return tf.Variable(tf.random_normal(shape,-1/math.sqrt(f),1/math.sqrt(f)))
     
     
     def update_target(self):
