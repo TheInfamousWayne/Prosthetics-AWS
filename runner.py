@@ -7,6 +7,7 @@
 import opensim as osim
 from osim.env import ProstheticsEnv
 import pandas as pd
+import numpy as np
 import gc
 gc.enable()
 
@@ -29,22 +30,13 @@ TEST = 100
 
 
 def main():
-    env = ProstheticsEnv(visualize=False, difficulty=1)
+    env = ProstheticsEnv(visualize=True, difficulty=1)
     agent = DDPG(env)
-#     env.monitor.start('experiments/' + ENV_NAME,force=True)
+    #env.monitor.start('experiments/' + ENV_NAME,force=True)
     
     # Playing Episodes
-    train_rewards = []
-    avg_rewards = []
-    
-    # Saving from last checkpoint
-    trew = pd.read_csv("train_rewards.csv",header=None)
-#    avgrew = pd.read_csv("avg_rewards.csv",header=None)
-    
-    for i in trew.values:
-        train_rewards.append(i[0])
- #   for i in avgrew.values:
-  #      avg_rewards.append(i[0])
+    train_rewards = list(np.load("train_rewards.npy"))
+    avg_rewards = list(np.load("average_rewards.npy"))
 
     for episode in range(EPISODES):
         state = env.reset()
@@ -65,6 +57,7 @@ def main():
         # Testing:
         if episode % 100 == 0 and episode > 100:
             total_reward = 0
+            # Running episodes
             for i in range(TEST):
                 state = env.reset()
                 for j in range(env.spec.timestep_limit):
@@ -74,15 +67,15 @@ def main():
                     total_reward += reward
                     if done:
                         break
-            ave_reward = total_reward/TEST
+            ave_reward = float(total_reward)/TEST
             avg_rewards.append(ave_reward)
             print ('episode: ',episode,'Evaluation Average Reward:',ave_reward)
         
         if episode % 50 == 0:
-            np.savetxt("train_rewards.csv", train_rewards, delimiter=",", fmt='%d')
-            np.savetxt("avg_rewards.csv", avg_rewards, delimiter=",", fmt='%f')
+            np.save("train_rewards.npy", train_rewards)
+            np.save("average_rewards.npy", avg_rewards)
     # Closing the monitor
-#     env.monitor.close()
+    #env.monitor.close()
 
 
 # In[5]:

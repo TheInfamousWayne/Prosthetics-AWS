@@ -24,7 +24,7 @@ from ou_noise import OUNoise
 # Hyper Parameters:
 REPLAY_BUFFER_SIZE = 5000
 REPLAY_START_SIZE = 200
-BATCH_SIZE = 64
+BATCH_SIZE = 128
 GAMMA = 0.99
 
 
