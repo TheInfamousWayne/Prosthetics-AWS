@@ -1,6 +1,0 @@
-model_checkpoint_path: "critic-network-9200"
-all_model_checkpoint_paths: "critic-network-7600"
-all_model_checkpoint_paths: "critic-network-8000"
-all_model_checkpoint_paths: "critic-network-8400"
-all_model_checkpoint_paths: "critic-network-8800"
-all_model_checkpoint_paths: "critic-network-9200"
