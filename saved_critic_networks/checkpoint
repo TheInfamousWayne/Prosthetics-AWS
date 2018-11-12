@@ -1,2 +1,6 @@
-model_checkpoint_path: "critic-network-0"
-all_model_checkpoint_paths: "critic-network-0"
+model_checkpoint_path: "critic-network-6000"
+all_model_checkpoint_paths: "critic-network-4400"
+all_model_checkpoint_paths: "critic-network-4800"
+all_model_checkpoint_paths: "critic-network-5200"
+all_model_checkpoint_paths: "critic-network-5600"
+all_model_checkpoint_paths: "critic-network-6000"
