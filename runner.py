@@ -30,7 +30,7 @@ TEST = 100
 
 
 def main():
-    env = ProstheticsEnv(visualize=False, difficulty=1)
+    env = ProstheticsEnv(visualize=True, difficulty=1)
     agent = DDPG(env)
     #env.monitor.start('experiments/' + ENV_NAME,force=True)
     
@@ -76,12 +76,12 @@ def main():
             print ('episode: ',episode,'Evaluation Average Reward:',ave_reward)
         
         if episode % 100 == 0:
-            print("Saving Rewards")
+            print("Saving Rewards. Episode: ", episode)
             np.save("train_rewards.npy", train_rewards)
             np.save("average_rewards.npy", avg_rewards)
             
         if episode % 100 == 0:
-            print("Saving Memory")
+            print("Saving Memory. Episode: ", episode)
             agent.replay_buffer.save()
             
     # Closing the monitor
