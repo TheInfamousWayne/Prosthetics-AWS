@@ -33,12 +33,16 @@ GAMMA = 0.97
 
 class DDPG:
     
-    def __init__(self, env):
+    def __init__(self, env, state_dim=None):
         self.name = 'DDPG' # name for uploading results
         self.environment = env
         # Randomly initialize actor network and critic network
         # along with their target networks
-        self.state_dim = env.observation_space.shape[0]
+        if state_dim:
+            self.state_dim = state_dim
+            print (self.state_dim)
+        else:
+            self.state_dim = env.observation_space.shape[0]
         self.action_dim = env.action_space.shape[0]
 
         self.sess = tf.InteractiveSession()
