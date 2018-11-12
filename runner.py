@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 5
+EPISODES = 20001
 TEST = 100
 
 
@@ -75,12 +75,12 @@ def main():
             avg_rewards.append(ave_reward)
             print ('episode: ',episode,'Evaluation Average Reward:',ave_reward)
         
-        if episode % 2 == 0:
+        if episode % 100 == 0:
             print("Saving Rewards")
             np.save("train_rewards.npy", train_rewards)
             np.save("average_rewards.npy", avg_rewards)
             
-        if episode % 2 == 0:
+        if episode % 100 == 0:
             print("Saving Memory")
             agent.replay_buffer.save()
             
@@ -93,4 +93,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    print("End Training")
 
