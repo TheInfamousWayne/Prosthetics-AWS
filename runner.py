@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 5001
+EPISODES = 20001
 TEST = 100
 
 
@@ -168,6 +168,7 @@ def main():
             print("Saving Rewards. Episode: ", episode)
             np.save("train_rewards.npy", train_rewards)
             np.save("average_rewards.npy", avg_rewards)
+            np.save("penalty.npy", penalties)
             
         if episode % 100 == 0:
             print("Saving Memory. Episode: ", episode)
