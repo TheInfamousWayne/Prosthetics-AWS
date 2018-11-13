@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 5001
+EPISODES = 1001
 TEST = 100
 
 
