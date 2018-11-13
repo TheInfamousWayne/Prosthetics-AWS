@@ -1,0 +1,701 @@
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-13 21:49:32.125380: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-13 21:50:50.228150: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-0
+Successfully loaded: saved_critic_networks/critic-network-0
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+Saving Rewards. Episode:  3
+Saving Memory. Episode:  3
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+save actor-network... 4
+save critic-network... 4
+Saving Rewards. Episode:  6
+Saving Memory. Episode:  6
+memory dumped into  ./replay_memory.pickle
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+save actor-network... 8
+save critic-network... 8
+Saving Rewards. Episode:  9
+Saving Memory. Episode:  9
+memory dumped into  ./replay_memory.pickle
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+save actor-network... 12
+save critic-network... 12
+Saving Rewards. Episode:  12
+Saving Memory. Episode:  12
+memory dumped into  ./replay_memory.pickle
+Saving Rewards. Episode:  15
+Saving Memory. Episode:  15
+memory dumped into  ./replay_memory.pickle
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+save actor-network... 16
+save critic-network... 16
+Saving Rewards. Episode:  18
+Saving Memory. Episode:  18
+memory dumped into  ./replay_memory.pickle
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+save actor-network... 20
+save critic-network... 20
+Saving Rewards. Episode:  21
+Saving Memory. Episode:  21
+memory dumped into  ./replay_memory.pickle
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network... 24
+save actor-network... 24
+save critic-network...Traceback (most recent call last):
+  File "runner.py", line 7, in <module>
+    import opensim as osim
+ImportError: No module named opensim
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-13 22:12:27.631143: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-32
+Successfully loaded: saved_critic_networks/critic-network-32
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+Saving Rewards. Episode:  3
+Saving Memory. Episode:  3
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4
+save critic-network... 4
+Saving Rewards. Episode:  6
+Saving Memory. Episode:  6
+memory dumped into  ./replay_memory.pickle
+save actor-network... 8
+save critic-network... 8
+Saving Rewards. Episode:  9
+Saving Memory. Episode:  9
+memory dumped into  ./replay_memory.pickle
+save actor-network... 12
+save critic-network... 12
+Saving Rewards. Episode:  12
+Saving Memory. Episode:  12
+memory dumped into  ./replay_memory.pickle
+End Training

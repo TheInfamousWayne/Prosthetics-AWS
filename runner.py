@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 10001
+EPISODES = 80001
 TEST = 100
 
 
@@ -109,7 +109,7 @@ def ob_dict_to_state(state_desc):
 
 
 def main():
-    env = ProstheticsEnv(visualize=True, difficulty=1)
+    env = ProstheticsEnv(visualize=False, difficulty=1)
     state_dim,_ = ob_dict_to_state(env.reset(project=False))
     state_dim = len(state_dim)
     agent = DDPG(env, state_dim)

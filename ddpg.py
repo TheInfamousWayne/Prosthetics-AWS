@@ -117,10 +117,11 @@ class DDPG:
             self.train()
 
         self.time_step = self.critic_network.time_step
-        if episode % 400 == 0 and self.not_saved:  #self.time_step % 400 == 0:
-            self.actor_network.save_network(episode) #(self.time_step)
-            self.critic_network.save_network(episode) #(self.time_step)
-            self.not_saved = False
+        if episode % 400 == 0:  #self.time_step % 400 == 0:
+            if self.not_saved:
+                self.actor_network.save_network(episode) #(self.time_step)
+                self.critic_network.save_network(episode) #(self.time_step)
+                self.not_saved = False
         else:
             self.not_saved = True
 
