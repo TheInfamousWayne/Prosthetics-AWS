@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 10#10001
+EPISODES = 5001
 TEST = 100
 
 
@@ -98,14 +98,14 @@ def ob_dict_to_state(state_desc):
     cm_pos_z = [state_desc["misc"]["mass_center_pos"][2] - pelvis_z_pos]
     res = res + cm_pos_x + cm_pos_y + state_desc["misc"]["mass_center_vel"] + state_desc["misc"]["mass_center_acc"]
 
-    head_behind_pen = min(0,state_desc["body_pos"][body_part][0] - pelvis_x_pos) * 0.5
+    head_behind_pen = min(0,state_desc["body_pos"]["head"][0] - pelvis_x_pos) * 0.5
 #     str_leg_pen = 
     
     
     return res, head_behind_pen
 
 
-# In[48]:
+# In[1]:
 
 
 def main():
@@ -164,11 +164,10 @@ def main():
             avg_rewards.append(ave_reward)
             print ('episode: ',episode,'Evaluation Average Reward:',ave_reward)
         
-        if episode % 2 == 0:
+        if episode % 100 == 0:
             print("Saving Rewards. Episode: ", episode)
             np.save("train_rewards.npy", train_rewards)
             np.save("average_rewards.npy", avg_rewards)
-            np.save("penalty.npy",penalties)
             
         if episode % 100 == 0:
             print("Saving Memory. Episode: ", episode)
@@ -176,7 +175,6 @@ def main():
             
     # Closing the monitor
     #env.monitor.close()
-
 
 
 # In[ ]:
@@ -253,27 +251,26 @@ if __name__ == '__main__':
 # (st["body_pos"]["head"][0] - st["body_pos"]["pelvis"][0]) * 2
 
 
-# In[63]:
+# In[2]:
 
 
-
-#xxxx = st["joint_pos"]["ankle_l"][1:2]
-
-
-# In[64]:
+# xxxx = st["joint_pos"]["ankle_l"][1:2]
 
 
-#aa = [1,2]
+# In[3]:
 
 
-# In[65]:
+# aa = [1,2]
 
 
-#aa += xxxx
+# In[4]:
 
 
-# In[66]:
+# aa += xxxx
 
 
-#aa
+# In[5]:
+
+
+# aa
 
