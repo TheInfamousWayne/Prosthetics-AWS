@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 20001
+EPISODES = 10001
 TEST = 100
 
 
@@ -255,23 +255,24 @@ if __name__ == '__main__':
 # In[63]:
 
 
-xxxx = st["joint_pos"]["ankle_l"][1:2]
+
+#xxxx = st["joint_pos"]["ankle_l"][1:2]
 
 
 # In[64]:
 
 
-aa = [1,2]
+#aa = [1,2]
 
 
 # In[65]:
 
 
-aa += xxxx
+#aa += xxxx
 
 
 # In[66]:
 
 
-aa
+#aa
 
