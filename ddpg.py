@@ -22,7 +22,7 @@ from ou_noise import OUNoise
 
 
 # Hyper Parameters:
-REPLAY_BUFFER_SIZE = 3000000
+REPLAY_BUFFER_SIZE = 2000000
 REPLAY_START_SIZE = 128
 BATCH_SIZE = 128
 GAMMA = 0.97
@@ -56,6 +56,8 @@ class DDPG:
         # Initialize a random process the Ornstein-Uhlenbeck process for action exploration
         self.exploration_noise = OUNoise(self.action_dim)
         
+        # Flag to signal save
+        self.not_saved = True
         
         
     def train(self):
@@ -106,7 +108,7 @@ class DDPG:
         return action
     
     
-    def perceive(self,state,action,reward,next_state,done):
+    def perceive(self,state,action,reward,next_state,done,episode):
         # Store transition (s_t,a_t,r_t,s_{t+1}) in replay buffer
         self.replay_buffer.add(state,action,reward,next_state,done)
 
@@ -115,9 +117,12 @@ class DDPG:
             self.train()
 
         self.time_step = self.critic_network.time_step
-        if self.time_step % 400 == 0:
-            self.actor_network.save_network(self.time_step)
-            self.critic_network.save_network(self.time_step)
+        if episode % 400 == 0 and self.not_saved:  #self.time_step % 400 == 0:
+            self.actor_network.save_network(episode) #(self.time_step)
+            self.critic_network.save_network(episode) #(self.time_step)
+            self.not_saved = False
+        else:
+            self.not_saved = True
 
         # Re-iniitialize the random process when an episode ends
         if done:

@@ -22,7 +22,7 @@ from ddpg import *
 # In[3]:
 
 
-EPISODES = 1001
+EPISODES = 10001
 TEST = 100
 
 
@@ -109,7 +109,7 @@ def ob_dict_to_state(state_desc):
 
 
 def main():
-    env = ProstheticsEnv(visualize=False, difficulty=1)
+    env = ProstheticsEnv(visualize=True, difficulty=1)
     state_dim,_ = ob_dict_to_state(env.reset(project=False))
     state_dim = len(state_dim)
     agent = DDPG(env, state_dim)
@@ -136,7 +136,7 @@ def main():
             action = agent.noise_action(state)
             next_state,reward,done,_ = env.step(action,project=False)
             next_state,penalty = ob_dict_to_state(next_state)
-            agent.perceive(state,action,reward+penalty,next_state,done)
+            agent.perceive(state,action,reward,next_state,done,episode)
             state = next_state
             total_reward += reward
             total_penalty += penalty
@@ -178,100 +178,11 @@ def main():
     #env.monitor.close()
 
 
+
 # In[ ]:
 
 
 if __name__ == '__main__':
     main()
     print("End Training")
-
-
-# In[ ]:
-
-
-#len(ob_dict_to_state(env.reset(project=False)))
-
-
-# In[37]:
-
-
-#env.observation_space.shape
-
-
-# In[38]:
-
-
-# st = env.reset(project=False)
-
-
-# In[39]:
-
-
-# converted = ob_dict_to_state(st)
-
-
-# In[40]:
-
-
-# converted
-
-
-# In[41]:
-
-
-# st["target_vel"]
-
-
-# In[42]:
-
-
-# st["body_pos"]["head"][0:]
-
-
-# In[44]:
-
-
-# st["joint_pos"]["hip_r"][:2]
-
-
-# In[45]:
-
-
-# st["body_pos"]["head"][0]
-
-
-# In[46]:
-
-
-# st["body_pos"]["pelvis"][0]
-
-
-# In[50]:
-
-
-# (st["body_pos"]["head"][0] - st["body_pos"]["pelvis"][0]) * 2
-
-
-# In[2]:
-
-
-# xxxx = st["joint_pos"]["ankle_l"][1:2]
-
-
-# In[3]:
-
-
-# aa = [1,2]
-
-
-# In[4]:
-
-
-# aa += xxxx
-
-
-# In[5]:
-
-
-# aa
 
