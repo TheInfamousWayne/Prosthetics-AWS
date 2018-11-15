@@ -4,7 +4,7 @@ Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
 The duplicate is being renamed to 'back_0'.
 Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
 The duplicate is being renamed to 'pros_foot_r_0'.
-2018-11-13 21:49:32.125380: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-14 01:08:31.470284: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
@@ -14,7 +14,7 @@ Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
 The duplicate is being renamed to 'back_0'.
 Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
 The duplicate is being renamed to 'pros_foot_r_0'.
-2018-11-13 21:50:50.228150: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-14 01:18:21.920915: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
@@ -26,676 +26,1372 @@ Successfully loaded: saved_critic_networks/critic-network-0
 memory loaded from  ./replay_memory.pickle
 save actor-network... 0
 save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
-save actor-network... 0
-save critic-network... 0
 Saving Rewards. Episode:  0
 Saving Memory. Episode:  0
 memory dumped into  ./replay_memory.pickle
-Saving Rewards. Episode:  3
-Saving Memory. Episode:  3
-memory dumped into  ./replay_memory.pickle
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-save actor-network... 4
-save critic-network... 4
-Saving Rewards. Episode:  6
-Saving Memory. Episode:  6
-memory dumped into  ./replay_memory.pickle
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-save actor-network... 8
-save critic-network... 8
-Saving Rewards. Episode:  9
-Saving Memory. Episode:  9
-memory dumped into  ./replay_memory.pickle
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-save actor-network... 12
-save critic-network... 12
-Saving Rewards. Episode:  12
-Saving Memory. Episode:  12
-memory dumped into  ./replay_memory.pickle
-Saving Rewards. Episode:  15
-Saving Memory. Episode:  15
-memory dumped into  ./replay_memory.pickle
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-save actor-network... 16
-save critic-network... 16
-Saving Rewards. Episode:  18
-Saving Memory. Episode:  18
+save actor-network... 10
+save critic-network... 10
+Saving Rewards. Episode:  10
+Saving Memory. Episode:  10
 memory dumped into  ./replay_memory.pickle
 save actor-network... 20
 save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-save actor-network... 20
-save critic-network... 20
-Saving Rewards. Episode:  21
-Saving Memory. Episode:  21
+Saving Rewards. Episode:  20
+Saving Memory. Episode:  20
 memory dumped into  ./replay_memory.pickle
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network... 24
-save actor-network... 24
-save critic-network...Traceback (most recent call last):
-  File "runner.py", line 7, in <module>
-    import opensim as osim
-ImportError: No module named opensim
+End Training
 Updating Model file from 30000 to latest format...
 Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
 Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
 The duplicate is being renamed to 'back_0'.
 Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
 The duplicate is being renamed to 'pros_foot_r_0'.
-2018-11-13 22:12:27.631143: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-11-14 09:17:29.420428: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
 WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
 Instructions for updating:
 Use `tf.global_variables_initializer` instead.
 [33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
 [33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
 227
-Successfully loaded: saved_actor_networks/actor-network-32
-Successfully loaded: saved_critic_networks/critic-network-32
+Successfully loaded: saved_actor_networks/actor-network-10
+Successfully loaded: saved_critic_networks/critic-network-10
 memory loaded from  ./replay_memory.pickle
 save actor-network... 0
 save critic-network... 0
 Saving Rewards. Episode:  0
 Saving Memory. Episode:  0
 memory dumped into  ./replay_memory.pickle
-Saving Rewards. Episode:  3
-Saving Memory. Episode:  3
+save actor-network... 10
+save critic-network... 10
+Saving Rewards. Episode:  10
+Saving Memory. Episode:  10
 memory dumped into  ./replay_memory.pickle
-save actor-network... 4
-save critic-network... 4
-Saving Rewards. Episode:  6
-Saving Memory. Episode:  6
+save actor-network... 20
+save critic-network... 20
+Saving Rewards. Episode:  20
+Saving Memory. Episode:  20
 memory dumped into  ./replay_memory.pickle
-save actor-network... 8
-save critic-network... 8
-Saving Rewards. Episode:  9
-Saving Memory. Episode:  9
+save actor-network... 30
+save critic-network... 30
+Saving Rewards. Episode:  30
+Saving Memory. Episode:  30
 memory dumped into  ./replay_memory.pickle
-save actor-network... 12
-save critic-network... 12
-Saving Rewards. Episode:  12
-Saving Memory. Episode:  12
+save actor-network... 40
+save critic-network... 40
+Saving Rewards. Episode:  40
+Saving Memory. Episode:  40
+memory dumped into  ./replay_memory.pickle
+End Training
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 09:29:24.036353: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-0
+Successfully loaded: saved_critic_networks/critic-network-0
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+save actor-network... 10
+save critic-network... 10
+Saving Rewards. Episode:  10
+Saving Memory. Episode:  10
+memory dumped into  ./replay_memory.pickle
+save actor-network... 20
+save critic-network... 20
+Saving Rewards. Episode:  20
+Saving Memory. Episode:  20
+memory dumped into  ./replay_memory.pickle
+save actor-network... 30
+save critic-network... 30
+Saving Rewards. Episode:  30
+Saving Memory. Episode:  30
+memory dumped into  ./replay_memory.pickle
+save actor-network... 40
+save critic-network... 40
+Saving Rewards. Episode:  40
+Saving Memory. Episode:  40
+memory dumped into  ./replay_memory.pickle
+save actor-network... 50
+save critic-network... 50
+Saving Rewards. Episode:  50
+Saving Memory. Episode:  50
+memory dumped into  ./replay_memory.pickle
+save actor-network... 60
+save critic-network... 60
+Saving Rewards. Episode:  60
+Saving Memory. Episode:  60
+memory dumped into  ./replay_memory.pickle
+save actor-network... 70
+save critic-network... 70
+Saving Rewards. Episode:  70
+Saving Memory. Episode:  70
+memory dumped into  ./replay_memory.pickle
+save actor-network... 80
+save critic-network... 80
+Saving Rewards. Episode:  80
+Saving Memory. Episode:  80
+memory dumped into  ./replay_memory.pickle
+save actor-network... 90
+save critic-network... 90
+Saving Rewards. Episode:  90
+Saving Memory. Episode:  90
+memory dumped into  ./replay_memory.pickle
+save actor-network... 100
+save critic-network... 100
+Saving Rewards. Episode:  100
+Saving Memory. Episode:  100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 110
+save critic-network... 110
+Saving Rewards. Episode:  110
+Saving Memory. Episode:  110
+memory dumped into  ./replay_memory.pickle
+save actor-network... 120
+save critic-network... 120
+Saving Rewards. Episode:  120
+Saving Memory. Episode:  120
+memory dumped into  ./replay_memory.pickle
+save actor-network... 130
+save critic-network... 130
+Saving Rewards. Episode:  130
+Saving Memory. Episode:  130
+memory dumped into  ./replay_memory.pickle
+save actor-network... 140
+save critic-network... 140
+Saving Rewards. Episode:  140
+Saving Memory. Episode:  140
+memory dumped into  ./replay_memory.pickle
+save actor-network... 150
+save critic-network... 150
+Saving Rewards. Episode:  150
+Saving Memory. Episode:  150
+memory dumped into  ./replay_memory.pickle
+save actor-network... 160
+save critic-network... 160
+Saving Rewards. Episode:  160
+Saving Memory. Episode:  160
+memory dumped into  ./replay_memory.pickle
+save actor-network... 170
+save critic-network... 170
+Saving Rewards. Episode:  170
+Saving Memory. Episode:  170
+memory dumped into  ./replay_memory.pickle
+save actor-network... 180
+save critic-network... 180
+Saving Rewards. Episode:  180
+Saving Memory. Episode:  180
+memory dumped into  ./replay_memory.pickle
+save actor-network... 190
+save critic-network... 190
+Saving Rewards. Episode:  190
+Saving Memory. Episode:  190
+memory dumped into  ./replay_memory.pickle
+save actor-network... 200
+save critic-network... 200
+episode:  200 Evaluation Average Reward: 1139.894985260259
+Saving Rewards. Episode:  200
+Saving Memory. Episode:  200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 210
+save critic-network... 210
+Saving Rewards. Episode:  210
+Saving Memory. Episode:  210
+memory dumped into  ./replay_memory.pickle
+save actor-network... 220
+save critic-network... 220
+Saving Rewards. Episode:  220
+Saving Memory. Episode:  220
+memory dumped into  ./replay_memory.pickle
+save actor-network... 230
+save critic-network... 230
+Saving Rewards. Episode:  230
+Saving Memory. Episode:  230
+memory dumped into  ./replay_memory.pickle
+Traceback (most recent call last):
+  File "runner.py", line 185, in <module>
+    main()
+  File "runner.py", line 137, in main
+    next_state,reward,done,_ = env.step(action,project=False)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 346, in step
+    self.osim_model.actuate(action)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 94, in actuate
+    raise ValueError("NaN passed in the activation vector. Values in [0,1] interval are required.")
+ValueError: NaN passed in the activation vector. Values in [0,1] interval are required.
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 10:47:22.601529: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-0
+Successfully loaded: saved_critic_networks/critic-network-0
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+save actor-network... 10
+save critic-network... 10
+Saving Rewards. Episode:  10
+Saving Memory. Episode:  10
+memory dumped into  ./replay_memory.pickle
+save actor-network... 20
+save critic-network... 20
+Saving Rewards. Episode:  20
+Saving Memory. Episode:  20
+memory dumped into  ./replay_memory.pickle
+End Training
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 10:58:55.274147: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-20
+Successfully loaded: saved_critic_networks/critic-network-20
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+Traceback (most recent call last):
+  File "runner.py", line 185, in <module>
+    main()
+  File "runner.py", line 137, in main
+    next_state,reward,done,_ = env.step(action,project=False)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 346, in step
+    self.osim_model.actuate(action)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 94, in actuate
+    raise ValueError("NaN passed in the activation vector. Values in [0,1] interval are required.")
+ValueError: NaN passed in the activation vector. Values in [0,1] interval are required.
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 12:07:46.339309: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-20
+Successfully loaded: saved_critic_networks/critic-network-20
+memory loaded from  ./replay_memory.pickle
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+save actor-network... 10
+save critic-network... 10
+Saving Rewards. Episode:  10
+Saving Memory. Episode:  10
+memory dumped into  ./replay_memory.pickle
+save actor-network... 20
+save critic-network... 20
+Saving Rewards. Episode:  20
+Saving Memory. Episode:  20
+memory dumped into  ./replay_memory.pickle
+save actor-network... 30
+save critic-network... 30
+Saving Rewards. Episode:  30
+Saving Memory. Episode:  30
+memory dumped into  ./replay_memory.pickle
+save actor-network... 40
+save critic-network... 40
+Saving Rewards. Episode:  40
+Saving Memory. Episode:  40
+memory dumped into  ./replay_memory.pickle
+save actor-network... 50
+save critic-network... 50
+Saving Rewards. Episode:  50
+Saving Memory. Episode:  50
+memory dumped into  ./replay_memory.pickle
+save actor-network... 60
+save critic-network... 60
+Saving Rewards. Episode:  60
+Saving Memory. Episode:  60
+memory dumped into  ./replay_memory.pickle
+save actor-network... 70
+save critic-network... 70
+Saving Rewards. Episode:  70
+Saving Memory. Episode:  70
+memory dumped into  ./replay_memory.pickle
+save actor-network... 80
+save critic-network... 80
+Saving Rewards. Episode:  80
+Saving Memory. Episode:  80
+memory dumped into  ./replay_memory.pickle
+save actor-network... 90
+save critic-network... 90
+Saving Rewards. Episode:  90
+Saving Memory. Episode:  90
+memory dumped into  ./replay_memory.pickle
+save actor-network... 100
+save critic-network... 100
+Saving Rewards. Episode:  100
+Saving Memory. Episode:  100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 110
+save critic-network... 110
+Saving Rewards. Episode:  110
+Saving Memory. Episode:  110
+memory dumped into  ./replay_memory.pickle
+save actor-network... 120
+save critic-network... 120
+Saving Rewards. Episode:  120
+Saving Memory. Episode:  120
+memory dumped into  ./replay_memory.pickle
+save actor-network... 130
+save critic-network... 130
+Saving Rewards. Episode:  130
+Saving Memory. Episode:  130
+memory dumped into  ./replay_memory.pickle
+save actor-network... 140
+save critic-network... 140
+Saving Rewards. Episode:  140
+Saving Memory. Episode:  140
+memory dumped into  ./replay_memory.pickle
+save actor-network... 150
+save critic-network... 150
+Saving Rewards. Episode:  150
+Saving Memory. Episode:  150
+memory dumped into  ./replay_memory.pickle
+save actor-network... 160
+save critic-network... 160
+Saving Rewards. Episode:  160
+Saving Memory. Episode:  160
+memory dumped into  ./replay_memory.pickle
+save actor-network... 170
+save critic-network... 170
+Saving Rewards. Episode:  170
+Saving Memory. Episode:  170
+memory dumped into  ./replay_memory.pickle
+save actor-network... 180
+save critic-network... 180
+Saving Rewards. Episode:  180
+Saving Memory. Episode:  180
+memory dumped into  ./replay_memory.pickle
+save actor-network... 190
+save critic-network... 190
+Saving Rewards. Episode:  190
+Saving Memory. Episode:  190
+memory dumped into  ./replay_memory.pickle
+save actor-network... 200
+save critic-network... 200
+episode:  200 Evaluation Average Reward: 803.3908439596873
+Saving Rewards. Episode:  200
+Saving Memory. Episode:  200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 210
+save critic-network... 210
+Saving Rewards. Episode:  210
+Saving Memory. Episode:  210
+memory dumped into  ./replay_memory.pickle
+save actor-network... 220
+save critic-network... 220
+Saving Rewards. Episode:  220
+Saving Memory. Episode:  220
+memory dumped into  ./replay_memory.pickle
+save actor-network... 230
+save critic-network... 230
+Saving Rewards. Episode:  230
+Saving Memory. Episode:  230
+memory dumped into  ./replay_memory.pickle
+save actor-network... 240
+save critic-network... 240
+Saving Rewards. Episode:  240
+Saving Memory. Episode:  240
+memory dumped into  ./replay_memory.pickle
+Traceback (most recent call last):
+  File "runner.py", line 187, in <module>
+    main()
+  File "runner.py", line 139, in main
+    next_state,reward,done,_ = env.step(action,project=False)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 346, in step
+    self.osim_model.actuate(action)
+  File "/Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/osim.py", line 94, in actuate
+    raise ValueError("NaN passed in the activation vector. Values in [0,1] interval are required.")
+ValueError: NaN passed in the activation vector. Values in [0,1] interval are required.
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 16:03:01.271064: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-20
+Successfully loaded: saved_critic_networks/critic-network-20
+a new beginning
+save actor-network... 0
+save critic-network... 0
+Saving Rewards. Episode:  0
+Saving Memory. Episode:  0
+memory dumped into  ./replay_memory.pickle
+save actor-network... 20
+save critic-network... 20
+save actor-network... 40
+save critic-network... 40
+save actor-network... 60
+save critic-network... 60
+save actor-network... 80
+save critic-network... 80
+save actor-network... 100
+save critic-network... 100
+Saving Rewards. Episode:  100
+Saving Memory. Episode:  100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 120
+save critic-network... 120
+save actor-network... 140
+save critic-network... 140
+save actor-network... 160
+save critic-network... 160
+save actor-network... 180
+save critic-network... 180
+save actor-network... 200
+save critic-network... 200
+episode:  200 Evaluation Average Reward: 709.8289307829967
+Saving Rewards. Episode:  200
+Saving Memory. Episode:  200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 220
+save critic-network... 220
+save actor-network... 240
+save critic-network... 240
+save actor-network... 260
+save critic-network... 260
+save actor-network... 280
+save critic-network... 280
+save actor-network... 300
+save critic-network... 300
+episode:  300 Evaluation Average Reward: 764.0263338581386
+Saving Rewards. Episode:  300
+Saving Memory. Episode:  300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 320
+save critic-network... 320
+save actor-network... 340
+save critic-network... 340
+save actor-network... 360
+save critic-network... 360
+save actor-network... 380
+save critic-network... 380
+save actor-network... 400
+save critic-network... 400
+episode:  400 Evaluation Average Reward: 749.8807997787445
+Saving Rewards. Episode:  400
+Saving Memory. Episode:  400
+memory dumped into  ./replay_memory.pickle
+End Training
+Traceback (most recent call last):
+  File "runner.py", line 194, in <module>
+    main()
+  File "runner.py", line 115, in main
+    env = ProstheticsEnv(visua, difficulty=1)
+NameError: name 'visua' is not defined
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 18:14:38.999988: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-400
+Successfully loaded: saved_critic_networks/critic-network-400
+memory loaded from  ./replay_memory.pickle
+save actor-network... 400
+save critic-network... 400
+Saving Rewards. Episode:  400
+Saving Memory. Episode:  400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 420
+save critic-network... 420
+save actor-network... 440
+save critic-network... 440
+save actor-network... 460
+save critic-network... 460
+save actor-network... 480
+save critic-network... 480
+save actor-network... 500
+save critic-network... 500
+Saving Rewards. Episode:  500
+Saving Memory. Episode:  500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 520
+save critic-network... 520
+save actor-network... 540
+save critic-network... 540
+save actor-network... 560
+save critic-network... 560
+save actor-network... 580
+save critic-network... 580
+save actor-network... 600
+save critic-network... 600
+episode:  600 Evaluation Average Reward: 721.562860284537
+Saving Rewards. Episode:  600
+Saving Memory. Episode:  600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 620
+save critic-network... 620
+save actor-network... 640
+save critic-network... 640
+save actor-network... 660
+save critic-network... 660
+save actor-network... 680
+save critic-network... 680
+save actor-network... 700
+save critic-network... 700
+episode:  700 Evaluation Average Reward: 788.0398780752905
+Saving Rewards. Episode:  700
+Saving Memory. Episode:  700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 720
+save critic-network... 720
+save actor-network... 740
+save critic-network... 740
+save actor-network... 760
+save critic-network... 760
+save actor-network... 780
+save critic-network... 780
+save actor-network... 800
+save critic-network... 800
+episode:  800 Evaluation Average Reward: 569.4321409630357
+Saving Rewards. Episode:  800
+Saving Memory. Episode:  800
+memory dumped into  ./replay_memory.pickle
+End Training
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 19:35:16.389482: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-800
+Successfully loaded: saved_critic_networks/critic-network-800
+memory loaded from  ./replay_memory.pickle
+save actor-network... 800
+save critic-network... 800
+Saving Rewards. Episode:  800
+Saving Memory. Episode:  800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 820
+save critic-network... 820
+save actor-network... 840
+save critic-network... 840
+save actor-network... 860
+save critic-network... 860
+save actor-network... 880
+save critic-network... 880
+save actor-network... 900
+save critic-network... 900
+Saving Rewards. Episode:  900
+Saving Memory. Episode:  900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 920
+save critic-network... 920
+save actor-network... 940
+save critic-network... 940
+save actor-network... 960
+save critic-network... 960
+save actor-network... 980
+save critic-network... 980
+save actor-network... 1000
+save critic-network... 1000
+episode:  1000 Evaluation Average Reward: 733.8664298922073
+Saving Rewards. Episode:  1000
+Saving Memory. Episode:  1000
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1020
+save critic-network... 1020
+save actor-network... 1040
+save critic-network... 1040
+save actor-network... 1060
+save critic-network... 1060
+save actor-network... 1080
+save critic-network... 1080
+save actor-network... 1100
+save critic-network... 1100
+episode:  1100 Evaluation Average Reward: 593.441107090561
+Saving Rewards. Episode:  1100
+Saving Memory. Episode:  1100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1120
+save critic-network... 1120
+save actor-network... 1140
+save critic-network... 1140
+save actor-network... 1160
+save critic-network... 1160
+save actor-network... 1180
+save critic-network... 1180
+save actor-network... 1200
+save critic-network... 1200
+episode:  1200 Evaluation Average Reward: 594.2186329361801
+Saving Rewards. Episode:  1200
+Saving Memory. Episode:  1200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1220
+save critic-network... 1220
+save actor-network... 1240
+save critic-network... 1240
+save actor-network... 1260
+save critic-network... 1260
+save actor-network... 1280
+save critic-network... 1280
+save actor-network... 1300
+save critic-network... 1300
+episode:  1300 Evaluation Average Reward: 588.4707245131185
+Saving Rewards. Episode:  1300
+Saving Memory. Episode:  1300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1320
+save critic-network... 1320
+save actor-network... 1340
+save critic-network... 1340
+save actor-network... 1360
+save critic-network... 1360
+save actor-network... 1380
+save critic-network... 1380
+save actor-network... 1400
+save critic-network... 1400
+episode:  1400 Evaluation Average Reward: 569.2833481324777
+Saving Rewards. Episode:  1400
+Saving Memory. Episode:  1400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1420
+save critic-network... 1420
+save actor-network... 1440
+save critic-network... 1440
+save actor-network... 1460
+save critic-network... 1460
+save actor-network... 1480
+save critic-network... 1480
+save actor-network... 1500
+save critic-network... 1500
+episode:  1500 Evaluation Average Reward: 577.6149636466489
+Saving Rewards. Episode:  1500
+Saving Memory. Episode:  1500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1520
+save critic-network... 1520
+save actor-network... 1540
+save critic-network... 1540
+save actor-network... 1560
+save critic-network... 1560
+save actor-network... 1580
+save critic-network... 1580
+save actor-network... 1600
+save critic-network... 1600
+episode:  1600 Evaluation Average Reward: 586.4241266405293
+Saving Rewards. Episode:  1600
+Saving Memory. Episode:  1600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1620
+save critic-network... 1620
+save actor-network... 1640
+save critic-network... 1640
+save actor-network... 1660
+save critic-network... 1660
+save actor-network... 1680
+save critic-network... 1680
+save actor-network... 1700
+save critic-network... 1700
+episode:  1700 Evaluation Average Reward: 576.0574440441616
+Saving Rewards. Episode:  1700
+Saving Memory. Episode:  1700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1720
+save critic-network... 1720
+save actor-network... 1740
+save critic-network... 1740
+save actor-network... 1760
+save critic-network... 1760
+save actor-network... 1780
+save critic-network... 1780
+save actor-network... 1800
+save critic-network... 1800
+episode:  1800 Evaluation Average Reward: 506.6732228490517
+Saving Rewards. Episode:  1800
+Saving Memory. Episode:  1800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1820
+save critic-network... 1820
+save actor-network... 1840
+save critic-network... 1840
+save actor-network... 1860
+save critic-network... 1860
+save actor-network... 1880
+save critic-network... 1880
+save actor-network... 1900
+save critic-network... 1900
+episode:  1900 Evaluation Average Reward: 492.9642811326544
+Saving Rewards. Episode:  1900
+Saving Memory. Episode:  1900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 1920
+save critic-network... 1920
+save actor-network... 1940
+save critic-network... 1940
+save actor-network... 1960
+save critic-network... 1960
+save actor-network... 1980
+save critic-network... 1980
+save actor-network... 2000
+save critic-network... 2000
+episode:  2000 Evaluation Average Reward: 500.2783883426552
+Saving Rewards. Episode:  2000
+Saving Memory. Episode:  2000
+memory dumped into  ./replay_memory.pickle
+End Training
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-14 22:39:04.441514: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-2000
+Successfully loaded: saved_critic_networks/critic-network-2000
+memory loaded from  ./replay_memory.pickle
+save actor-network... 2000
+save critic-network... 2000
+Saving Rewards. Episode:  2000
+Saving Memory. Episode:  2000
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2020
+save critic-network... 2020
+save actor-network... 2040
+save critic-network... 2040
+save actor-network... 2060
+save critic-network... 2060
+save actor-network... 2080
+save critic-network... 2080
+save actor-network... 2100
+save critic-network... 2100
+Saving Rewards. Episode:  2100
+Saving Memory. Episode:  2100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2120
+save critic-network... 2120
+save actor-network... 2140
+save critic-network... 2140
+save actor-network... 2160
+save critic-network... 2160
+save actor-network... 2180
+save critic-network... 2180
+save actor-network... 2200
+save critic-network... 2200
+episode:  2200 Evaluation Average Reward: 454.64377822445965
+Saving Rewards. Episode:  2200
+Saving Memory. Episode:  2200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2220
+save critic-network... 2220
+save actor-network... 2240
+save critic-network... 2240
+save actor-network... 2260
+save critic-network... 2260
+save actor-network... 2280
+save critic-network... 2280
+save actor-network... 2300
+save critic-network... 2300
+episode:  2300 Evaluation Average Reward: 453.2933591344637
+Saving Rewards. Episode:  2300
+Saving Memory. Episode:  2300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2320
+save critic-network... 2320
+save actor-network... 2340
+save critic-network... 2340
+save actor-network... 2360
+save critic-network... 2360
+save actor-network... 2380
+save critic-network... 2380
+save actor-network... 2400
+save critic-network... 2400
+episode:  2400 Evaluation Average Reward: 453.54738877577375
+Saving Rewards. Episode:  2400
+Saving Memory. Episode:  2400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2420
+save critic-network... 2420
+save actor-network... 2440
+save critic-network... 2440
+save actor-network... 2460
+save critic-network... 2460
+save actor-network... 2480
+save critic-network... 2480
+save actor-network... 2500
+save critic-network... 2500
+episode:  2500 Evaluation Average Reward: 457.331782100479
+Saving Rewards. Episode:  2500
+Saving Memory. Episode:  2500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2520
+save critic-network... 2520
+save actor-network... 2540
+save critic-network... 2540
+save actor-network... 2560
+save critic-network... 2560
+save actor-network... 2580
+save critic-network... 2580
+save actor-network... 2600
+save critic-network... 2600
+episode:  2600 Evaluation Average Reward: 457.6439729922703
+Saving Rewards. Episode:  2600
+Saving Memory. Episode:  2600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2620
+save critic-network... 2620
+save actor-network... 2640
+save critic-network... 2640
+save actor-network... 2660
+save critic-network... 2660
+save actor-network... 2680
+save critic-network... 2680
+save actor-network... 2700
+save critic-network... 2700
+episode:  2700 Evaluation Average Reward: 457.04814099398243
+Saving Rewards. Episode:  2700
+Saving Memory. Episode:  2700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2720
+save critic-network... 2720
+save actor-network... 2740
+save critic-network... 2740
+save actor-network... 2760
+save critic-network... 2760
+save actor-network... 2780
+save critic-network... 2780
+save actor-network... 2800
+save critic-network... 2800
+episode:  2800 Evaluation Average Reward: 433.9811999191514
+Saving Rewards. Episode:  2800
+Saving Memory. Episode:  2800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2820
+save critic-network... 2820
+save actor-network... 2840
+save critic-network... 2840
+save actor-network... 2860
+save critic-network... 2860
+save actor-network... 2880
+save critic-network... 2880
+save actor-network... 2900
+save critic-network... 2900
+episode:  2900 Evaluation Average Reward: 436.42369271429715
+Saving Rewards. Episode:  2900
+Saving Memory. Episode:  2900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 2920
+save critic-network... 2920
+save actor-network... 2940
+save critic-network... 2940
+save actor-network... 2960
+save critic-network... 2960
+save actor-network... 2980
+save critic-network... 2980
+save actor-network... 3000
+save critic-network... 3000
+episode:  3000 Evaluation Average Reward: 436.65590291182497
+Saving Rewards. Episode:  3000
+Saving Memory. Episode:  3000
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3020
+save critic-network... 3020
+save actor-network... 3040
+save critic-network... 3040
+save actor-network... 3060
+save critic-network... 3060
+save actor-network... 3080
+save critic-network... 3080
+save actor-network... 3100
+save critic-network... 3100
+episode:  3100 Evaluation Average Reward: 459.5691388562097
+Saving Rewards. Episode:  3100
+Saving Memory. Episode:  3100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3120
+save critic-network... 3120
+save actor-network... 3140
+save critic-network... 3140
+save actor-network... 3160
+save critic-network... 3160
+save actor-network... 3180
+save critic-network... 3180
+save actor-network... 3200
+save critic-network... 3200
+episode:  3200 Evaluation Average Reward: 436.8440599005694
+Saving Rewards. Episode:  3200
+Saving Memory. Episode:  3200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3220
+save critic-network... 3220
+save actor-network... 3240
+save critic-network... 3240
+save actor-network... 3260
+save critic-network... 3260
+save actor-network... 3280
+save critic-network... 3280
+save actor-network... 3300
+save critic-network... 3300
+episode:  3300 Evaluation Average Reward: 436.87343579627395
+Saving Rewards. Episode:  3300
+Saving Memory. Episode:  3300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3320
+save critic-network... 3320
+save actor-network... 3340
+save critic-network... 3340
+save actor-network... 3360
+save critic-network... 3360
+save actor-network... 3380
+save critic-network... 3380
+save actor-network... 3400
+save critic-network... 3400
+episode:  3400 Evaluation Average Reward: 443.0685746230326
+Saving Rewards. Episode:  3400
+Saving Memory. Episode:  3400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3420
+save critic-network... 3420
+save actor-network... 3440
+save critic-network... 3440
+save actor-network... 3460
+save critic-network... 3460
+save actor-network... 3480
+save critic-network... 3480
+save actor-network... 3500
+save critic-network... 3500
+episode:  3500 Evaluation Average Reward: 421.1834244404549
+Saving Rewards. Episode:  3500
+Saving Memory. Episode:  3500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3520
+save critic-network... 3520
+save actor-network... 3540
+save critic-network... 3540
+save actor-network... 3560
+save critic-network... 3560
+save actor-network... 3580
+save critic-network... 3580
+save actor-network... 3600
+save critic-network... 3600
+episode:  3600 Evaluation Average Reward: 422.4017602927014
+Saving Rewards. Episode:  3600
+Saving Memory. Episode:  3600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3620
+save critic-network... 3620
+save actor-network... 3640
+save critic-network... 3640
+save actor-network... 3660
+save critic-network... 3660
+save actor-network... 3680
+save critic-network... 3680
+save actor-network... 3700
+save critic-network... 3700
+episode:  3700 Evaluation Average Reward: 422.60388752493435
+Saving Rewards. Episode:  3700
+Saving Memory. Episode:  3700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3720
+save critic-network... 3720
+save actor-network... 3740
+save critic-network... 3740
+save actor-network... 3760
+save critic-network... 3760
+save actor-network... 3780
+save critic-network... 3780
+save actor-network... 3800
+save critic-network... 3800
+episode:  3800 Evaluation Average Reward: 452.310109447573
+Saving Rewards. Episode:  3800
+Saving Memory. Episode:  3800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3820
+save critic-network... 3820
+save actor-network... 3840
+save critic-network... 3840
+save actor-network... 3860
+save critic-network... 3860
+save actor-network... 3880
+save critic-network... 3880
+save actor-network... 3900
+save critic-network... 3900
+episode:  3900 Evaluation Average Reward: 422.6033641878428
+Saving Rewards. Episode:  3900
+Saving Memory. Episode:  3900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 3920
+save critic-network... 3920
+save actor-network... 3940
+save critic-network... 3940
+save actor-network... 3960
+save critic-network... 3960
+save actor-network... 3980
+save critic-network... 3980
+save actor-network... 4000
+save critic-network... 4000
+episode:  4000 Evaluation Average Reward: 422.6023074670662
+Saving Rewards. Episode:  4000
+Saving Memory. Episode:  4000
+memory dumped into  ./replay_memory.pickle
+End Training
+Updating Model file from 30000 to latest format...
+Loaded model gait14dof22musc_pros from file /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/osim/env/../models/gait14dof22musc_pros_20180507.osim
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'back'.
+The duplicate is being renamed to 'back_0'.
+Model 'gait14dof22musc_pros' has subcomponents with duplicate name 'pros_foot_r'.
+The duplicate is being renamed to 'pros_foot_r_0'.
+2018-11-15 08:02:21.478446: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/theinfamouswayne/anaconda2/envs/opensim-rl/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:189: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+[33mWARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.[0m
+227
+Successfully loaded: saved_actor_networks/actor-network-4000
+Successfully loaded: saved_critic_networks/critic-network-4000
+memory loaded from  ./replay_memory.pickle
+save actor-network... 4000
+save critic-network... 4000
+Saving Rewards. Episode:  4000
+Saving Memory. Episode:  4000
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4020
+save critic-network... 4020
+save actor-network... 4040
+save critic-network... 4040
+save actor-network... 4060
+save critic-network... 4060
+save actor-network... 4080
+save critic-network... 4080
+save actor-network... 4100
+save critic-network... 4100
+Saving Rewards. Episode:  4100
+Saving Memory. Episode:  4100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4120
+save critic-network... 4120
+save actor-network... 4140
+save critic-network... 4140
+save actor-network... 4160
+save critic-network... 4160
+save actor-network... 4180
+save critic-network... 4180
+save actor-network... 4200
+save critic-network... 4200
+episode:  4200 Evaluation Average Reward: 422.6039148982885
+Saving Rewards. Episode:  4200
+Saving Memory. Episode:  4200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4220
+save critic-network... 4220
+save actor-network... 4240
+save critic-network... 4240
+save actor-network... 4260
+save critic-network... 4260
+save actor-network... 4280
+save critic-network... 4280
+save actor-network... 4300
+save critic-network... 4300
+episode:  4300 Evaluation Average Reward: 414.9967951198175
+Saving Rewards. Episode:  4300
+Saving Memory. Episode:  4300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4320
+save critic-network... 4320
+save actor-network... 4340
+save critic-network... 4340
+save actor-network... 4360
+save critic-network... 4360
+save actor-network... 4380
+save critic-network... 4380
+save actor-network... 4400
+save critic-network... 4400
+episode:  4400 Evaluation Average Reward: 414.38928739011965
+Saving Rewards. Episode:  4400
+Saving Memory. Episode:  4400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4420
+save critic-network... 4420
+save actor-network... 4440
+save critic-network... 4440
+save actor-network... 4460
+save critic-network... 4460
+save actor-network... 4480
+save critic-network... 4480
+save actor-network... 4500
+save critic-network... 4500
+episode:  4500 Evaluation Average Reward: 455.2569429095835
+Saving Rewards. Episode:  4500
+Saving Memory. Episode:  4500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4520
+save critic-network... 4520
+save actor-network... 4540
+save critic-network... 4540
+save actor-network... 4560
+save critic-network... 4560
+save actor-network... 4580
+save critic-network... 4580
+save actor-network... 4600
+save critic-network... 4600
+episode:  4600 Evaluation Average Reward: 413.70780814671224
+Saving Rewards. Episode:  4600
+Saving Memory. Episode:  4600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4620
+save critic-network... 4620
+save actor-network... 4640
+save critic-network... 4640
+save actor-network... 4660
+save critic-network... 4660
+save actor-network... 4680
+save critic-network... 4680
+save actor-network... 4700
+save critic-network... 4700
+episode:  4700 Evaluation Average Reward: 413.7089226111563
+Saving Rewards. Episode:  4700
+Saving Memory. Episode:  4700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4720
+save critic-network... 4720
+save actor-network... 4740
+save critic-network... 4740
+save actor-network... 4760
+save critic-network... 4760
+save actor-network... 4780
+save critic-network... 4780
+save actor-network... 4800
+save critic-network... 4800
+episode:  4800 Evaluation Average Reward: 411.27548277154585
+Saving Rewards. Episode:  4800
+Saving Memory. Episode:  4800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4820
+save critic-network... 4820
+save actor-network... 4840
+save critic-network... 4840
+save actor-network... 4860
+save critic-network... 4860
+save actor-network... 4880
+save critic-network... 4880
+save actor-network... 4900
+save critic-network... 4900
+episode:  4900 Evaluation Average Reward: 412.33919482674867
+Saving Rewards. Episode:  4900
+Saving Memory. Episode:  4900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 4920
+save critic-network... 4920
+save actor-network... 4940
+save critic-network... 4940
+save actor-network... 4960
+save critic-network... 4960
+save actor-network... 4980
+save critic-network... 4980
+save actor-network... 5000
+save critic-network... 5000
+episode:  5000 Evaluation Average Reward: 412.31227264546504
+Saving Rewards. Episode:  5000
+Saving Memory. Episode:  5000
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5020
+save critic-network... 5020
+save actor-network... 5040
+save critic-network... 5040
+save actor-network... 5060
+save critic-network... 5060
+save actor-network... 5080
+save critic-network... 5080
+save actor-network... 5100
+save critic-network... 5100
+episode:  5100 Evaluation Average Reward: 412.3443711585319
+Saving Rewards. Episode:  5100
+Saving Memory. Episode:  5100
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5120
+save critic-network... 5120
+save actor-network... 5140
+save critic-network... 5140
+save actor-network... 5160
+save critic-network... 5160
+save actor-network... 5180
+save critic-network... 5180
+save actor-network... 5200
+save critic-network... 5200
+episode:  5200 Evaluation Average Reward: 412.7359684751509
+Saving Rewards. Episode:  5200
+Saving Memory. Episode:  5200
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5220
+save critic-network... 5220
+save actor-network... 5240
+save critic-network... 5240
+save actor-network... 5260
+save critic-network... 5260
+save actor-network... 5280
+save critic-network... 5280
+save actor-network... 5300
+save critic-network... 5300
+episode:  5300 Evaluation Average Reward: 412.7340759083728
+Saving Rewards. Episode:  5300
+Saving Memory. Episode:  5300
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5320
+save critic-network... 5320
+save actor-network... 5340
+save critic-network... 5340
+save actor-network... 5360
+save critic-network... 5360
+save actor-network... 5380
+save critic-network... 5380
+save actor-network... 5400
+save critic-network... 5400
+episode:  5400 Evaluation Average Reward: 455.6918603079387
+Saving Rewards. Episode:  5400
+Saving Memory. Episode:  5400
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5420
+save critic-network... 5420
+save actor-network... 5440
+save critic-network... 5440
+save actor-network... 5460
+save critic-network... 5460
+save actor-network... 5480
+save critic-network... 5480
+save actor-network... 5500
+save critic-network... 5500
+episode:  5500 Evaluation Average Reward: 415.8636495802335
+Saving Rewards. Episode:  5500
+Saving Memory. Episode:  5500
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5520
+save critic-network... 5520
+save actor-network... 5540
+save critic-network... 5540
+save actor-network... 5560
+save critic-network... 5560
+save actor-network... 5580
+save critic-network... 5580
+save actor-network... 5600
+save critic-network... 5600
+episode:  5600 Evaluation Average Reward: 456.4714939516924
+Saving Rewards. Episode:  5600
+Saving Memory. Episode:  5600
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5620
+save critic-network... 5620
+save actor-network... 5640
+save critic-network... 5640
+save actor-network... 5660
+save critic-network... 5660
+save actor-network... 5680
+save critic-network... 5680
+save actor-network... 5700
+save critic-network... 5700
+episode:  5700 Evaluation Average Reward: 415.29772326538694
+Saving Rewards. Episode:  5700
+Saving Memory. Episode:  5700
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5720
+save critic-network... 5720
+save actor-network... 5740
+save critic-network... 5740
+save actor-network... 5760
+save critic-network... 5760
+save actor-network... 5780
+save critic-network... 5780
+save actor-network... 5800
+save critic-network... 5800
+episode:  5800 Evaluation Average Reward: 435.8482478943878
+Saving Rewards. Episode:  5800
+Saving Memory. Episode:  5800
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5820
+save critic-network... 5820
+save actor-network... 5840
+save critic-network... 5840
+save actor-network... 5860
+save critic-network... 5860
+save actor-network... 5880
+save critic-network... 5880
+save actor-network... 5900
+save critic-network... 5900
+episode:  5900 Evaluation Average Reward: 436.8637624571985
+Saving Rewards. Episode:  5900
+Saving Memory. Episode:  5900
+memory dumped into  ./replay_memory.pickle
+save actor-network... 5920
+save critic-network... 5920
+save actor-network... 5940
+save critic-network... 5940
+save actor-network... 5960
+save critic-network... 5960
+save actor-network... 5980
+save critic-network... 5980
+save actor-network... 6000
+save critic-network... 6000
+episode:  6000 Evaluation Average Reward: 426.7434443773679
+Saving Rewards. Episode:  6000
+Saving Memory. Episode:  6000
 memory dumped into  ./replay_memory.pickle
 End Training

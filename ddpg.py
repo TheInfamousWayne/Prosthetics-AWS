@@ -59,6 +59,11 @@ class DDPG:
         # Flag to signal save
         self.not_saved = True
         
+        #For normalisation
+        self.state_mean = 0
+        self.state_std = 1
+        self.target_mean = 0
+        self.target_std = 1
         
     def train(self):
         #print "train step",self.time_step
@@ -69,6 +74,18 @@ class DDPG:
         reward_batch = np.asarray([data[2] for data in minibatch])
         next_state_batch = np.asarray([data[3] for data in minibatch])
         done_batch = np.asarray([data[4] for data in minibatch])
+        
+        #For Normalisation
+        states = np.array(state_batch)
+        targets = np.array(next_state_batch)
+        self.state_mean = states.mean(axis=0)
+        self.state_std = states.std(axis=0) + 0.00000001
+        self.target_mean = targets.mean(axis=0)
+        self.target_std = targets.std(axis=0) + 0.00000001
+        states = (state_batch - self.state_mean)/self.state_std
+        targets = (next_state_batch - self.target_mean)/self.target_std
+        state_batch = states.tolist()
+        next_state_batch = targets.tolist()
 
         # for action_dim = 1
         action_batch = np.resize(action_batch,[BATCH_SIZE,self.action_dim])
@@ -99,11 +116,24 @@ class DDPG:
         
     def noise_action(self,state):
         # Select action a_t according to the current policy and exploration noise
+        
+        # Normalising first
+        state = np.array(state)
+        state = (state - self.state_mean)/self.state_std
+        state = state.tolist()
+        
         action = self.actor_network.action(state)
+#         print ("State-: ", state)
+#         print ("Action-: ", action)
         return action+self.exploration_noise.noise()
     
     
     def action(self,state):
+        # Normalising first
+        state = np.array(state)
+        state = (state - self.state_mean)/self.state_std
+        state = state.tolist()
+        # Taking action
         action = self.actor_network.action(state)
         return action
     
@@ -117,7 +147,7 @@ class DDPG:
             self.train()
 
         self.time_step = self.critic_network.time_step
-        if episode % 400 == 0:  #self.time_step % 400 == 0:
+        if episode % 20 == 0:  #self.time_step % 400 == 0:
             if self.not_saved:
                 self.actor_network.save_network(episode) #(self.time_step)
                 self.critic_network.save_network(episode) #(self.time_step)

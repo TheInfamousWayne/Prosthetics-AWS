@@ -115,8 +115,10 @@ class ActorNetwork:
         return state_input,action_output,target_update,is_training
     
     
-    def variable(self,shape,f):
-        return tf.Variable(tf.random_normal(shape,-1/math.sqrt(f),1/math.sqrt(f)))
+    def variable(self,shape,f=None):
+        if f:
+            return tf.Variable(tf.random_normal(shape,-1/math.sqrt(f),1/math.sqrt(f)))
+        return tf.Variable(tf.random_normal(shape))
     
     
     def update_target(self):

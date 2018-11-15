@@ -1,32 +1,34 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 
 import opensim as osim
 from osim.env import ProstheticsEnv
 import pandas as pd
 import numpy as np
+import math
 import gc
 gc.enable()
 
 
-# In[2]:
+# In[4]:
 
 
 #import nbimporter
 from ddpg import *
 
 
-# In[3]:
+# In[1]:
 
 
-EPISODES = 8001
-TEST = 100
+EPISODES = 6001
+TEST = 10
+LAST_END = 6000
 
 
-# In[35]:
+# In[6]:
 
 
 def ob_dict_to_state(state_desc):
@@ -98,18 +100,55 @@ def ob_dict_to_state(state_desc):
     cm_pos_z = [state_desc["misc"]["mass_center_pos"][2] - pelvis_z_pos]
     res = res + cm_pos_x + cm_pos_y + state_desc["misc"]["mass_center_vel"] + state_desc["misc"]["mass_center_acc"]
 
-    head_behind_pen = min(0,state_desc["body_pos"]["head"][0] - pelvis_x_pos) * 0.5
+    head_behind_pen = (state_desc["body_pos"]["head"][0] - pelvis_x_pos) * 10
+#     print (head_behind_pen)
 #     str_leg_pen = 
     
     
     return res, head_behind_pen
 
 
+# In[921]:
+
+
+def initialize(env):
+    init_state,_ = ob_dict_to_state(env.reset(project=False))
+    action = np.zeros(19)
+    action[[6,14]] = 1
+    for i in range(10):
+        next_state,reward,done,_ = env.step(action,project=False)
+    action = np.zeros(19)
+    action[[2,10,5,13,18]] = 1
+    for i in range(10):
+        next_state,reward,done,_ = env.step(action,project=False)
+    #####
+    action = np.zeros(19)
+    action[[15,18,8,12,14,17]] = 1
+    action[[6]] = 0.6
+    action[9] = 0.3
+    for i in range(20):
+        next_state,reward,done,_ = env.step(action,project=False)
+    #####
+    action = np.zeros(19)
+    action[[3]] = 1
+    action[[7]] = 1
+    action[[2]] = 0.7
+    for i in range(15):
+        next_state,reward,done,_ = env.step(action,project=False)
+    #####
+    action = np.zeros(19)
+    action[[1]] = 0.3
+    for i in range(10):
+        next_state,reward,done,_ = env.step(action,project=False)
+    
+    return next_state
+
+
 # In[1]:
 
 
 def main():
-    env = ProstheticsEnv(visualize=False, difficulty=1)
+    env = ProstheticsEnv(visualize=True, difficulty=1)
     state_dim,_ = ob_dict_to_state(env.reset(project=False))
     state_dim = len(state_dim)
     agent = DDPG(env, state_dim)
@@ -125,28 +164,43 @@ def main():
         avg_rewards = []
         penalties = []
 
-    for episode in range(EPISODES):
+    for episode in range(LAST_END, LAST_END+EPISODES):
+        eps = max(0.05,1.0/np.sqrt(episode-LAST_END+1))
         state = env.reset(project=False)
         state,_ = ob_dict_to_state(state)
         #print "episode:",episode
         # Train
         total_reward = 0
         total_penalty = 0
+        
+        # initial steps to take
+        state,_ = ob_dict_to_state(initialize(env))
+        
         for step in range(env.spec.timestep_limit):
-            action = agent.noise_action(state)
+            if np.random.random() < eps:
+                action = env.action_space.sample()
+            else:
+                action = agent.noise_action(state)
+            #action = [0 if math.isnan(x) else x for x in action]
+#             print ("State: ", state)
+#             print("Action: ", action)
             next_state,reward,done,_ = env.step(action,project=False)
+#             reward = reward*(((step+1)*2)/env.spec.timestep_limit)
             next_state,penalty = ob_dict_to_state(next_state)
-            agent.perceive(state,action,reward,next_state,done,episode)
+#             print("Reward: ", reward, episode, step)
+#             print("pen: ", penalty, episode, step)
+            print("---R+pen: ", reward+penalty, episode, step)
+#             agent.perceive(state,action,reward+penalty,next_state,done,episode)
             state = next_state
             total_reward += reward
             total_penalty += penalty
             if done:
-                break
+                break 
         train_rewards.append(total_reward)
         penalties.append(total_penalty)
                 
         # Testing:
-        if episode % 100 == 0 and episode > 100:
+        if episode % 100 == 0 and episode > 100+LAST_END :
             total_reward = 0
             # Running episodes
             for i in range(TEST):
