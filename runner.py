@@ -148,7 +148,7 @@ def initialize(env):
 
 
 def main():
-    env = ProstheticsEnv(visualize=True, difficulty=1)
+    env = ProstheticsEnv(visualize=False, difficulty=1)
     state_dim,_ = ob_dict_to_state(env.reset(project=False))
     state_dim = len(state_dim)
     agent = DDPG(env, state_dim)
@@ -165,7 +165,7 @@ def main():
         penalties = []
 
     for episode in range(LAST_END, LAST_END+EPISODES):
-        eps = max(0.05,1.0/np.sqrt(episode-LAST_END+1))
+        eps = 0.08
         state = env.reset(project=False)
         state,_ = ob_dict_to_state(state)
         #print "episode:",episode
@@ -189,8 +189,8 @@ def main():
             next_state,penalty = ob_dict_to_state(next_state)
 #             print("Reward: ", reward, episode, step)
 #             print("pen: ", penalty, episode, step)
-            print("---R+pen: ", reward+penalty, episode, step)
-#             agent.perceive(state,action,reward+penalty,next_state,done,episode)
+#             print("---R+pen: ", reward+penalty, episode, step)
+            agent.perceive(state,action,reward+penalty,next_state,done,episode)
             state = next_state
             total_reward += reward
             total_penalty += penalty
