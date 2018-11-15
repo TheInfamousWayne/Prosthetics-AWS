@@ -174,7 +174,7 @@ def main():
         total_penalty = 0
         
         # initial steps to take
-        state,_ = ob_dict_to_state(initialize(env))
+#         state,_ = ob_dict_to_state(initialize(env))
         
         for step in range(env.spec.timestep_limit):
             if np.random.random() < eps:
